@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(200, 6%, 90%);
+
+}
+
+
+body{
+    color: var(--dark-grayish-blue);
+    font-family: 'Bai Jamjuree',sans-serif;
+    text-align: center;
+}
+header{
+    background: url(../clipboard-landing-page-master/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 0;
+}
+img{
+    max-width: 100%;
+}
+section{
+    padding: 30px 0;
+}
+p{
+    line-height: 1.5;
+}
+.container{
+    padding: 0 20px;
+    width: 1200px;
+    max-width:100%;
+    margin: 0 auto;
+}
+.container-small{
+    width: 700px;
+}
+.m4{
+    margin: 100px auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.flex > *{
+    flex: 1;
+    padding: 10px;
+}
+.btn{
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600px;
+    padding: 15px 35px;
+    margin: 15px 5px;
+    font-size: 16px;
+}
+.btn-primary{
+    background-color: var(--strong-cyan);
+    box-shadow: 0 4px hsl(171, 68%, 36%);;
+
+}
+.btn-secondary{
+    background-color: var(--light-blue);
+    box-shadow: 0 4px hsl(233, 71%, 61%);;
+}
+footer{
+    background-color:var(--grayish-blue) ;
+}
+footer img{
+    width: 60px;
+}
+footer ul{
+    flex-wrap:wrap;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+footer ul a{
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+footer .links{
+    flex: 3;
+}
+.links li{
+    margin-right: 40px;
+    padding: 10px;
+   
+}
+footer .socials li{
+    margin-right: 10px;
+}
+footer .socials a{
+    font-size: 25px;
+    margin-right: 0.5px;
+}
+footer .container{
+    margin-bottom: 0;
+}
+
+@media(max-width:768px){
+    .flex{
+        flex-direction: column;
+    }
+    .links li{
+        margin-right: 0px;
+        padding: 10px;
+    }
+    .links{
+        flex-direction: column;
+    } 
+       
+}
